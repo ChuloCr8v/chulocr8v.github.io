@@ -1,0 +1,1078 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #a4a5a53b;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background: #ffffff ;
+  display: flex;
+  flex-direction: column;
+  Justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+  border-radius: 0 0 50px 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.header-nav {
+  display: none;
+}
+
+.header-nav-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #e5e4e4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 5px;
+  border-radius: 40px 40px 0 0;
+  border-top: 2px red solid;
+  z-index: 50;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-nav-mobile >a >img {
+  background: #4c5464;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+}
+
+.header-nav-mobile >a >img:hover {
+  outline: none;
+  background: #f89595;
+  border: 2px blue solid;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+.menu-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-open {
+  display: none;
+}
+
+.chulo {
+  font-family: 'Festive', cursive;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.cr8v {
+  font-family: 'Otomanopee One', sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  -webkit-text-stroke: 2px yellow;
+  
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.avatar-container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  position: inherit;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.69);
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hello {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+.i-am {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.i-am-a {
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  margin-top: -50px;
+  font-family: Sans-Serif;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}   
+
+.titles::after {
+  content: '';
+  height: 20px;
+  border-right: 4px red solid;
+  margin-left: 2px;
+  animation: blink 0.3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+ 
+   100% {
+     opacity: 1;
+   }
+}
+
+.meet-me {
+  background: white;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173); 
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0 30px;
+  border-bottom: 2px red solid;
+}
+
+.meet-me-title {
+  color: white;
+  background: #ff0000a7;
+  padding: 8px 18px;
+  border-radius: 20px;
+  
+}
+
+.meet-me-content {
+  text-align: center;
+  margin-top: -25px;
+}
+
+.read-more {
+  color: red;
+}
+
+.name {
+  font-family: 'Otomanopee One', sans-serif;
+  color: #008000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.avatar-title-container >p{
+  line-height: 50px;
+}
+
+p {
+  font-family: Sans-Serif;
+  line-height: 25px;
+}
+
+.sections-heading {
+  background: #e5e4e4;
+  color: #ff0000a7;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.sections-heading-dark {
+  background: white;
+  color: #ff0000a7;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+#skills {
+  background: white;
+  border-radius: 50px 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill > img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: all 500ms;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+  overflow: hidden;
+  padding: 50px 30px;
+  margin-bottom: 100px;
+}
+
+.wordpress {
+  border-top: 2px red solid;
+  border-radius: 30px 0;
+}
+
+.front-end {
+  border-right: 2px red solid;
+  border-radius: 0 30px;
+}
+
+.content {
+  border-left: 2px red solid;
+  border-radius: 30px 0;
+}
+
+.graphics {
+  border-bottom: 2px red solid;
+  border-radius: 0 30px;
+}
+
+subtitle, label {
+ font-family: 'Festive', cursive;
+ background: #ff0000a7; 
+ text-align: center;
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ padding: 5px 10px;
+}
+
+label {
+  font-size: 15px;
+}
+
+.social-username a {
+  color: white;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:  20px;
+  border-radius: 0 50px;
+  margin-bottom: 100px;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+}
+
+.testimonial-one {
+  border-top: 2px red solid;
+}
+.testimonial-two {
+  border-right: 2px red solid;
+}
+.testimonial-three {
+  border-bottom: 2px red solid;
+}
+
+.testimony {
+  background: #ff0000a7;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 17px;
+  padding: 20px;
+  border-radius: 0 50px;
+  margin: 20px 0;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+}
+
+.client-name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.review-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+#portfolio {
+  background: white;
+  border-radius: 0 50px;
+  padding: 100px inherit;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.work {
+  background: white;
+  width: 85%;
+  padding: 50px 20px;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173); 
+  border-radius: 50px 0;
+  margin-bottom: 100px;
+}
+
+.blogr {
+ border-top: 2px red solid; 
+}
+
+.calculator {
+  border-right: 2px red solid;
+}
+
+.login-desktop {
+  border-bottom: 2px red solid;
+}
+
+.login-mobile {
+  border-left: 2px red solid;
+}
+
+.todo-app {
+  border-top: 2px red solid;
+}
+
+caption {
+  background: #e5e4e4;
+  text-align: center;
+}
+
+.work {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-subtitle {
+  margin: 30px;
+  border-radius: 2px;
+}
+
+.work > a {
+  background: #ff0000a7;
+  color: white;
+  padding: 8px 16px;
+  margin: 0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 4px #888888;
+  
+}
+
+.work > a:focus {
+  outline: none;
+  border: 2px blue solid;
+  background: #e5e4e4;
+  box-shadow: none;
+  color: black;
+  transition: all 0.2s ease-in-out ; 
+}
+
+.msg-social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message >form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  width: 50%;
+  border-radius: 10px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 8px 16px;
+  border: 2px #ff0000a7 solid;
+  border-radius:10px; 
+  
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px blue solid;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn {
+  color: #ff0000a7;
+  font-size: 17px;
+  text-transform: uppercase;
+  width: 60%;
+  padding: 8px 16px;
+  border: 2px #ff0000a7 solid;
+  border-radius:10px; 
+  margin: 20px;
+}
+
+.submit-btn:hover {
+  border: 2px blue solid;
+  background: #ff0000a7;
+  color: white;
+  
+}
+
+.message {
+  background: white;
+  padding: 50px;
+  border-radius: 50px 0;
+  border-top: 2px red solid;
+  box-shadow: 3px 3px 8px 2px rgb(173,173,173); 
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.social-icons {
+  width: 30px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.account-container {
+  background: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+}
+
+.social-username {
+  background: none;
+  font-size: 15px;
+}
+
+.social-username a {
+  color: black;
+}
+
+
+.facebook {
+  border-top: 2px red solid;
+  border-radius: 50px 0;
+}
+  
+.twitter {
+  border-right: 2px red solid;
+  border-radius: 0 50px;
+}
+
+.linked-in {
+  border-bottom: 2px red solid;
+  border-radius: 50px 0;
+}
+
+.github {
+  border-left: 2px red solid;
+  border-radius: 0 50px;
+}
+
+.whatsapp{
+  border-top: 2px red solid;
+  border-radius: 50px 0;
+}
+
+.gmail {
+  border-right: 2px red solid;
+  border-radius: 0 50px;
+}
+
+.social-username:hover {
+  background: white;
+  border: 2px blue solid;
+  border-radius: 20px;
+  color: black;
+}
+
+footer {
+  background: rgba(36, 36, 36, 0.692);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px 50px 0 0;
+  padding: 20px;
+  box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
+}
+
+.footer-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-menu > a {
+  font-size: 15px ;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+.menu-active {
+  display: none;
+}
+
+
+.show-menu-icon {
+  display: block;
+}
+
+.show-menu {
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 688px){
+ .header-nav {
+   display: flex;
+ }
+ 
+ .header-nav-mobile {
+   display: none;
+ }
+ 
+.chulo {
+  font-size: 30px;
+}
+
+.cr8v {
+  font-size: 40px;
+}
+
+.menu-icon {
+  display: none;
+}
+ 
+.header-menu > a {
+  font-family: Sans-Serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header-menu > a:hover {
+  color: red;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+ 
+.sections-heading-dark, .sections-heading {
+  font-size: 35px;
+}
+
+.avatar {
+  height: 400px;
+  width: 400px;
+}
+
+.titles {
+  font-size: 50px;
+}
+
+.titles::after {
+  height: 50px;
+}
+ 
+.meet-me-title {
+   font-size: 35px;
+   padding: 5px 10px;
+ }
+ 
+.avatar-title-container >h1 {
+  color: red;
+   font-size: 35px;
+}
+ 
+.avatar-title-container >p {
+   font-size: 35px;
+   line-height: 80px;
+}
+
+.i-am {
+  font-size: 35px;
+}
+
+.name {
+  margin-left: 50px;  
+  font-size: 40px;
+}
+
+.i-am-a {
+  font-size: 35px;
+}
+
+section {
+  padding: 100px;
+}
+
+.meet-me {
+  padding: 30px;
+}
+
+.meet-me-title {
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+.meet-me-content {
+  font-size: 20px;
+}
+
+.skills-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  width: 400px;
+}
+
+.skill-img {
+  height: 200px;
+  width: 200px;
+}
+
+
+subtitle{
+  font-size: 30px;
+  padding: 15px;
+}
+
+.review-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.review-img {
+  height: 200px;
+  width: 200px;
+}
+
+.testimonial {
+  width: 350px;
+}
+
+.testimony {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.client-name {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.works {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work {
+  width: 350px;
+}
+
+.work > a {
+  font-size: 20px;
+}
+
+.message {
+  width: 80%;
+  padding: 100px;
+}
+
+
+label, subtitle {
+  font-size: 15px;
+}
+
+input {
+  padding: 16px 32px;
+}
+ 
+.work-btn {
+  font-size: 25px;
+}
+ 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.twitter {
+  margin-top: 100px;
+}
+
+.github {
+  margin-top: 100px;
+}
+
+.gmail {
+  margin-top: 100px;
+}
+ 
+ 
+ footer {
+   height: 200px;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+ }
+
+.footer-menu {
+  flex-direction: row;
+  font-size: 30px;
+}
+
+.footer-menu a {
+  margin-right: 50px;
+  letter-spacing: 3px;
+}
+
+footer >.logo >.cr8v {
+  font-size: 50px;
+}
+
+footer >.logo >.chulo {
+  font-size: 40px;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  header {
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .chulo {
+    font-size: 50px;
+  }
+
+  .cr8v {
+    font-size: 65px;
+  }
+
+  .header-menu > a {
+    font-size: 30px;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+ .avatar-title-container .i-am-a {
+   font-size: 30px;
+   margin: 10px;
+ }
+
+ .avatar-title-container >p {
+   font-size: 30px;
+ }
+
+ .name {
+   font-size: 50px;
+ }
+
+.titles {
+  font-size: 40px; 
+  margin-top: -70px;
+}
+
+.meet-me {
+  padding: 50px;
+}
+
+.meet-me-title {
+  font-size: 30px;
+  padding: 10px 25px;
+}
+
+.meet-me-content {
+  font-size: 30px;
+  line-height: 180%;
+}
+
+.sections-heading, .sections-heading-dark {
+  font-size: 35px;
+  padding: 10px 25px;
+}
+
+.skill {
+  width: 20%;
+  padding: 50px;
+}
+
+.skill > img {
+  height: 200px;
+  width: 200px;
+}
+
+
+subtitle {
+  font-size: 20px;
+}
+
+.review-container {
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+}
+
+.testimonial:nth-child(3){
+  height: 500px;
+}
+
+.works {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 30%;
+}
+
+
+.work > img {
+  border-radius: 0 50px;
+}
+
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+input, .text-area {
+  font-size: 15px;
+}
+
+.social-media {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.account-container {
+  width: 20%;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+
+footer > .logo > .chulo {
+  font-size: 50px;
+}
+
+footer > .logo > .cr8v {
+  font-size: 80px;
+}
+
+.footer-menu > a {
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
