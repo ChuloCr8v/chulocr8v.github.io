@@ -683,9 +683,9 @@ footer {
   transition: all 0.3s ease-in-out;
 }
  
-.sections-heading-dark, .sections-heading {
-  font-size: 35px;
-}
+h1 {
+  font-size: 20px;
+  }
 
 .avatar {
   height: 400px;
