@@ -160,6 +160,7 @@ section {
 h1 {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .i-am-a {
@@ -313,7 +314,7 @@ img:hover {
 }
 
 subtitle, label {
- font-family: 'Festive', cursive;
+ font-family: Sans-Serif;
  background: #ff0000a7; 
  text-align: center;
  color: white;
