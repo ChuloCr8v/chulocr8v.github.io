@@ -553,6 +553,10 @@ input:focus, textarea:focus {
   box-shadow: 3px 3px 8px 2px  rgb(173,173,173);
 }
 
+.linked-in{
+  margin-right: 50px;
+}
+
 .social-username {
   background: none;
   font-size: 15px;
@@ -562,14 +566,8 @@ input:focus, textarea:focus {
   color: black;
 }
 
-
-.facebook {
-  border-top: 2px red solid;
-  border-radius: 50px 0;
-}
-  
 .twitter {
-  border-right: 2px red solid;
+  border-top: 2px red solid;
   border-radius: 0 50px;
 }
 
@@ -583,14 +581,9 @@ input:focus, textarea:focus {
   border-radius: 0 50px;
 }
 
-.whatsapp{
-  border-top: 2px red solid;
-  border-radius: 50px 0;
-}
-
 .gmail {
   border-right: 2px red solid;
-  border-radius: 0 50px;
+  border-radius: 50px 0;
 }
 
 .social-username:hover {
@@ -819,18 +812,6 @@ input {
   margin-bottom: 0;
 }
 
-.twitter {
-  margin-top: 100px;
-}
-
-.github {
-  margin-top: 100px;
-}
-
-.gmail {
-  margin-top: 100px;
-}
- 
  
  footer {
    height: 200px;
